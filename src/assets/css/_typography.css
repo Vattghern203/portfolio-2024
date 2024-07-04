@@ -1,0 +1,30 @@
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-display: swap;
+    color: var(--text-900);
+}
+
+.about__presentation {
+
+    & > h1 {
+
+        font-size: calc(8rem + 1vw);
+        line-height: 1;
+        margin: 0;
+    }
+
+    & > p {
+
+        font-size: calc(1rem + .5vw);
+        line-height: 1;
+        text-align: end;
+    }
+}
