@@ -42,16 +42,42 @@
     gap: 2vmin;
 }
 
+.navigation__item {
+
+    & > a {
+
+        &:is(:link, :visited) {
+    
+        color: var(--accent-600);
+        font-weight: 600;
+    
+        transition: color .2s ease;
+    
+            &:hover {
+        
+                color: var(--accent-500);
+            }
+        }
+    
+        &:active {
+
+            color: var(--accent-400);
+            text-decoration: underline;
+        }
+    }
+
+}
+
 /*
 BLOB
 */
 
 .blob {
 
-    width: 54rem;
-    height: 54rem;
+    width: 34rem;
+    height: 34rem;
     aspect-ratio: 1 / 1;
-    background-color: var(--accent-500);
+    background-color: purple;
 
     border-radius: 50%;
 
@@ -59,12 +85,16 @@ BLOB
 
     z-index: -1;
 
-    top: -25%;
-    opacity: 70%;
+    top: -15%;
+    left: 50%;
+    opacity: 50%;
 
     filter: blur(2.6rem);
 
-    animation: blob-morph infinite alternate ease-in-out 20s;
+    animation: blob-morph infinite alternate ease-in-out 50s;
+    transition: scale ease .8s;
+
+    mix-blend-mode: multiply;
 
     &::after {
 
@@ -76,9 +106,14 @@ BLOB
         position: inherit;
 
         animation-delay: .8s;
-        top: 0;
+        top: -10%;
         left: -55%;
 
         background-color: var(--secondary-500);
     }
 }
+
+/*
+SVG
+*/
+

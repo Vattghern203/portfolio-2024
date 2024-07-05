@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/assets/css/main.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <header class="header">
 
             <div class="logo">
-                <img class="logo__img" src="" alt="">
+                <a href="#wrapper">
+                    <img class="logo__img" src="" alt="">
+                </a>
             </div>
 
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#about">about</a></li>
-                    <li class="navigation__item"><a href="#techs">techs</a></li>
-                    <li class="navigation__item"><a href="#projects">projects</a></li>
-                    <li class="navigation__item"><a href="#contact">contact</a></li>
+                    <li class="navigation__item">
+                        <a aria-label="ir até o sobre" href="#about">about</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a aria-label="ir até as tecnologias" href="#techs">techs</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a aria-label="ver os projetos" href="#projects">projects</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a aria-label="entrar em contato" href="#contact">contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -46,9 +57,20 @@
             </section>
 
             <section class="techs" id="techs">
-                TECHS
+                <h2>Minhas Tecnlogias</h2>
 
-                
+                <ul>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                    <li><img src="" alt=""></li>
+                </ul>
             </section>
 
             <section class="projects" id="prjects">
@@ -59,7 +81,15 @@
 
                         <img src="" alt="">
 
-                        <h3></h3>
+                        <h3>DeepCoffe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cupiditate repellat sit asperiores debitis! Sint sit asperiores provident impedit id esse ea voluptatum, quas perferendis, error, architecto ipsam? Cumque, dolorem.</p>
+                    </article>
+
+                    <article class="card">
+
+                        <img src="" alt="">
+
+                        <h3>Origami</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cupiditate repellat sit asperiores debitis! Sint sit asperiores provident impedit id esse ea voluptatum, quas perferendis, error, architecto ipsam? Cumque, dolorem.</p>
                     </article>
                 </div>
@@ -67,6 +97,18 @@
 
             <section class="contact" id="contact">
                 CONTACT
+
+                <div class="tech__container">
+                    <article class="tech__card">
+                        <i class="devicon-python-plain"></i>
+                    </article>
+
+                    <article class="tech__card">
+
+                        <i class="devicon-react-plain"></i>
+                    </article>
+                </div>
+
             </section>
 
         </main>

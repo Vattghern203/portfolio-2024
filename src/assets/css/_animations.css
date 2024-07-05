@@ -8,22 +8,31 @@
 }
 
 @keyframes blob-morph {
-    10%, 40%, 100% {
+    10%, 40%, 70%, 100% {
 
-        scale: 100%;
+        scale: initial;
+        rotate: initial;
     }
 
-    30% {
+    20%, 50%, 80% {
 
-        scale: 120%;
+        scale: 105%;
     }
 
-    60% {
+    30%, 60% {
 
-        scale: 80%;
+        scale: 95%;
+    }
+}
+
+@keyframes blob-move {
+    0% {
+
+        translate: initial;
     }
 
-    80% {
-        scale: 60%;
+    20% {
+
+        transform: translateX(-5%);
     }
 }

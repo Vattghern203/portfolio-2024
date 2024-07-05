@@ -13,6 +13,7 @@ html {
 
     color-scheme: dark light;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {

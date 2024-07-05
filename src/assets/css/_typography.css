@@ -16,9 +16,14 @@ body {
 
     & > h1 {
 
+        background-image: var(--linearSecondaryAccent);
         font-size: calc(8rem + 1vw);
         line-height: 1;
         margin: 0;
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 
     & > p {
