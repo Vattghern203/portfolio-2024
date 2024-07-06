@@ -74,24 +74,24 @@ BLOB
 
 .blob {
 
-    width: 34rem;
-    height: 34rem;
-    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
     background-color: purple;
 
     border-radius: 50%;
 
     position: absolute;
 
+    inset: 0;
+
     z-index: -1;
 
-    top: -15%;
-    left: 50%;
     opacity: 50%;
 
-    filter: blur(2.6rem);
+    filter: blur(8rem);
 
-    animation: blob-morph infinite alternate ease-in-out 50s;
+    animation: blob-morph infinite alternate ease-in-out 10s;
     transition: scale ease .8s;
 
     mix-blend-mode: multiply;
@@ -106,8 +106,7 @@ BLOB
         position: inherit;
 
         animation-delay: .8s;
-        top: -10%;
-        left: -55%;
+        
 
         background-color: var(--secondary-500);
     }
@@ -117,3 +116,37 @@ BLOB
 SVG
 */
 
+/*
+BUTTON
+*/
+
+.button {
+
+    background-color: var(--accent-300);
+
+    width: 100%;
+    padding: 2rem 4rem;
+
+    border-radius: 100vmax;
+
+    border: none;
+    font-size: 2rem;
+
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition: opacity .2s ease, transform .2s ease;
+
+    will-change: transform, opacity;
+
+    &:hover {
+
+        opacity: 80%;
+    }
+
+    &:active {
+
+        transform: translateY(2.5%);
+    }
+}

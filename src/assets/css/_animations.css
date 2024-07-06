@@ -8,20 +8,15 @@
 }
 
 @keyframes blob-morph {
-    10%, 40%, 70%, 100% {
+    from {
 
         scale: initial;
-        rotate: initial;
+        
     }
 
-    20%, 50%, 80% {
-
-        scale: 105%;
-    }
-
-    30%, 60% {
-
-        scale: 95%;
+    to {
+ 
+        scale: 110%;
     }
 }
 
