@@ -3,6 +3,19 @@
     /*SPACING*/
 
     --spacing-small: .2rem;
+    --spacing-medium: .4rem;
+    --spacing-normal: .8rem;
+
+    --spacing-sm: 2rem;
+    --spacing-md: 2.4rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 2.4rem;
+    --spacing-2xl: 3rem;
+
+    --rounded-small: .8rem;
+    --rounded-medium: 1.6rem;
+    --rounded-full: 50%;
+    --rounded-peal: 100vmax;
 
     /*TYPOGRAPHY*/
 

@@ -91,8 +91,8 @@ BLOB
 
     filter: blur(8rem);
 
-    animation: blob-morph infinite alternate ease-in-out 10s;
-    transition: scale ease .8s;
+    animation: blob-morph infinite alternate linear 6s;
+    transition: scale ease .2s;
 
     mix-blend-mode: multiply;
 
@@ -149,4 +149,54 @@ BUTTON
 
         transform: translateY(2.5%);
     }
+}
+
+/*
+CARD
+*/
+
+.card {
+
+    border: var(--primary-100) .2rem solid;
+    border-radius: var(--rounded-medium);
+    overflow: hidden;
+    padding-inline: var(--spacing-md);
+    padding-block: var(--spacing-lg);
+
+    width: min(40rem);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+
+    &:hover > .card__header > .card__img {
+
+        scale: 1.4;
+    }
+}
+
+.card__header {
+
+    border-radius: var(--rounded-small);
+    border: var(--primary-100) .2rem solid;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card__img {
+
+    transform-origin: center;
+    transition: scale .2s ease-in;
+}
+
+.card__title {
+
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    color: var(--text-700);
+}
+
+.card__description {
+
+    color: var(--text-600);
+    font-weight: 600;
 }

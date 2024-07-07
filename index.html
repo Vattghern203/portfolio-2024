@@ -39,41 +39,54 @@
 
         <main>
 
-            <section class="about" id="about">
+            <section class="intro" id="intro">
 
-                <div class="about__presentation">
+                <div class="intro__presentation">
                     <div class="presentation__header">
                         <h1>Otávio Barbiéri</h1>
     
                         <p>Front End Developer</p>
-                    </div>
 
-                    <div class="presentation__footer">
-                        <p>
-                            Um resolvedor de problemas nato com grande conhecimentos no frontend.
-                        </p>
-
-                        <p><strong>Vamos tirar suas ideias do papel?</strong></p>
-    
-                        <button class="button button--cta">Entre em Contato</button>
+                        
                     </div>
 
                 </div>
 
-                <div class="about__hero">
-                   <img class="about__hero__img" src="src/assets/media/hero.jpg" alt="">
+                <div class="intro__hero">
+                   <img class="intro__hero__img" src="src/assets/media/hero.jpg" alt="">
                    <article class="blob"></article>
                 </div>
 
+            </section>
+
+
+            <section class="about">
+
+                <h2>Sobre mim</h2>
+                
+                <article class="secondary__text about__body ">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quidem. Consequatur deserunt, autem laboriosam animi delectus tenetur. Quas omnis iste, quam recusandae, tempora ipsa incidunt dolorem ratione cumque nostrum aliquam!</p>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui sapiente cupiditate voluptatem amet possimus provident nihil non hic consectetur, corrupti omnis ea. Incidunt aliquam labore possimus iste placeat cum!</p>
+                </article>
+
+                <article class="blob"></article>
 
             </section>
 
             <section class="techs" id="techs">
-                <h2>Minhas Tecnologias</h2>
+
+                <div class="tech__header">
+
+                    <h2>Minhas Tecnologias</h2>
+    
+                    <p>Essas são algumas das tecnologias que mais uso em meus projetos</p>
+                </div>
+
 
                 <div class="tech__container">
                     <article class="tech__card">
-                        <i></i>
+                        <i class="devicon-typescript-plain"></i>
                         <h3></h3>
                     </article>
                     <article class="tech__card">
@@ -105,18 +118,66 @@
                 <div class="projects__container">
                     <article class="card">
 
-                        <img src="" alt="">
+                        <div class="card__header">
 
-                        <h3>DeepCoffe</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cupiditate repellat sit asperiores debitis! Sint sit asperiores provident impedit id esse ea voluptatum, quas perferendis, error, architecto ipsam? Cumque, dolorem.</p>
+                            <img class="card__img" src="src/assets/media/projects/deepcoffe.png" alt="">
+                        </div>
+
+
+                        <div class="card__body">
+                            <h3 class="card__title">DeepCoffe</h3>
+                            <p class="card__description">Um analisador de doenças do cafeeiro por meio de Deep Learning. É o vencedor de uma corrida de startups do IF Sul de Minas - Campus Muzambinho.</p>
+                        </div>
+
                     </article>
 
                     <article class="card">
 
-                        <img src="" alt="">
+                        <div class="card__header">
+                            <img class="card__img" src="src/assets/media/projects/yonaka.png" alt="">
+                        </div>
 
-                        <h3>Origami</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut cupiditate repellat sit asperiores debitis! Sint sit asperiores provident impedit id esse ea voluptatum, quas perferendis, error, architecto ipsam? Cumque, dolorem.</p>
+                        <div class="card__body">
+                            <h3 class="card__title">yonaka</h3>
+                            <p class="card__description">Um framework CSS inspirado pelo TailiwndCSS e o PicoCSS. Usa a semântica e acessibilidade para estilizar elementos HTML, como também classes utilitárias para a criação de variantes.</p>
+                        </div>
+
+                    </article>
+                    <article class="card">
+
+                        <div class="card__header">
+                            <img class="card__img" src="src/assets/media/projects/outdoors.png" alt="">
+                        </div>
+
+                        <div class="card__body">
+                            <h3 class="card__title">Outdoors</h3>
+                            <p class="card__description">Um site para uma agência que oferece aventuras em meio a natureza para todos os gostos e idades.</p>
+                        </div>
+
+                    </article>
+                    <article class="card">
+
+                        <div class="card__header">
+                            <img class="card__img" src="src/assets/media/projects/prisimple.png" alt="">
+                        </div>
+
+                        <div class="card__body">
+                            <h3 class="card__title">Prisimple</h3>
+                            <p class="card__description">Uma aplicação que busca ajudar pequenos empreendedores na hora de calcular o preço de alguma mercadoria e/ou serviço com uma margem de lucro fixa.</p>
+                        </div>
+
+                    </article>
+                    <article class="card">
+
+                        <div class="card__header">
+                            <img class="card__img" src="src/assets/media/projects/chisai.png" alt="">
+                        </div>
+
+                        <div class="card__body">
+                            <h3 class="card__title">Chisai</h3>
+                            <p class="card__description">Um jogo RPG feito com PyGame. A história consiste nas aventuras de um jovem que fora recussitado em um mundo fantasioso após sua heróica morte.</p>
+                        </div>
+
                     </article>
                 </div>
             </section>

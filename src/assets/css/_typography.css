@@ -12,7 +12,26 @@ body {
     color: var(--text-900);
 }
 
-.about__presentation .presentation__header {
+
+h2 {
+
+    font-size: 6.4rem;
+}
+
+h3 {
+
+    font-size: 4.8rem;
+}
+
+.secondary__text {
+
+    font-size: 1.6rem;
+    color: var(--text-700);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.intro__presentation .presentation__header {
 
     & > h1 {
 
@@ -36,7 +55,7 @@ body {
     }
 }
 
-.about__presentation .presentation__footer {
+.intro__presentation .presentation__footer {
 
     & > p {
 
@@ -53,3 +72,4 @@ body {
         color: var(--800);
     }
 }
+

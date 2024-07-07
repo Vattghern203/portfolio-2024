@@ -19,6 +19,7 @@ html {
 body {
 
     box-sizing: inherit;
+    overflow-x: hidden;
 }
 
 ul,
