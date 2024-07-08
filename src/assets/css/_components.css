@@ -35,6 +35,7 @@
     background-color: var(--background-200);
     border-radius: 50%;
 }
+
 .navigation__list {
 
     display: flex;
@@ -44,21 +45,21 @@
 
 .navigation__item {
 
-    & > a {
+    &>a {
 
         &:is(:link, :visited) {
-    
-        color: var(--accent-600);
-        font-weight: 600;
-    
-        transition: color .2s ease;
-    
+
+            color: var(--accent-600);
+            font-weight: 600;
+
+            transition: color .2s ease;
+
             &:hover {
-        
+
                 color: var(--accent-500);
             }
         }
-    
+
         &:active {
 
             color: var(--accent-400);
@@ -106,7 +107,7 @@ BLOB
         position: inherit;
 
         animation-delay: .8s;
-        
+
 
         background-color: var(--secondary-500);
     }
@@ -163,12 +164,14 @@ CARD
     padding-inline: var(--spacing-md);
     padding-block: var(--spacing-lg);
 
-    width: min(40rem);
+    width: 36rem;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
 
-    &:hover > .card__header > .card__img {
+    cursor: pointer;
+
+    &:hover>.card__header>.card__img {
 
         scale: 1.4;
     }
@@ -185,7 +188,10 @@ CARD
 .card__img {
 
     transform-origin: center;
-    transition: scale .2s ease-in;
+    transition: scale .2s cubic-bezier(0.83, 0, 0.17, 1);
+    height: 16rem;
+    object-fit: cover;
+    object-position: top;
 }
 
 .card__title {
@@ -199,4 +205,93 @@ CARD
 
     color: var(--text-600);
     font-weight: 600;
+}
+
+/*
+TECH CARD
+*/
+
+.tech__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-700);
+    border-radius: var(--rounded-small);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    width: clamp(32rem, 50%, 24vmin);
+    height: 32rem;
+
+    position: relative;
+
+    overflow: hidden;
+    z-index: 2;
+
+    &::before {
+
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+                rgba(255, 255, 255, 0.4),
+                transparent 40%);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        filter: blur(6rem);
+        z-index: 3;
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+
+    &:hover::before {
+
+        opacity: 1;
+    }
+}
+
+.tech__card__content {
+
+    background-color: var(--primary-500);
+    height: calc(100% - .2rem);
+    width: calc(100% - .2rem);
+    border-radius: inherit;
+    margin: .1rem;
+    padding: var(--spacing-lg);
+    z-index: 2;
+    position: relative;
+}
+
+.tech__card__border {
+
+    background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.3),
+            transparent 40%);
+    z-index: 1;
+
+    &:hover {
+
+        opacity: 1;
+    }
+}
+
+.tech__card>i {
+    flex: 0;
+    color: var(--primary-800);
+    line-height: 1;
+    margin: 0;
+    font-size: xx-large;
+}
+
+.tech__card__body {
+
+    width: 100%;
+    text-align: start;
+}
+
+.tech__card__title {
+
+    font-size: 2rem;
 }

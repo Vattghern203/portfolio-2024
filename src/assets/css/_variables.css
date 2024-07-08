@@ -6,11 +6,13 @@
     --spacing-medium: .4rem;
     --spacing-normal: .8rem;
 
+    --spacing-xsm: .8rem;
     --spacing-sm: 2rem;
     --spacing-md: 2.4rem;
     --spacing-lg: 3rem;
-    --spacing-xl: 2.4rem;
-    --spacing-2xl: 3rem;
+    --spacing-xl: 3.4rem;
+    --spacing-2xl: 3.8rem;
+    --spacing-3xl: 4.2rem;
 
     --rounded-small: .8rem;
     --rounded-medium: 1.6rem;

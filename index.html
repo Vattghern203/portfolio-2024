@@ -65,9 +65,9 @@
                 <h2>Sobre mim</h2>
                 
                 <article class="secondary__text about__body ">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quidem. Consequatur deserunt, autem laboriosam animi delectus tenetur. Quas omnis iste, quam recusandae, tempora ipsa incidunt dolorem ratione cumque nostrum aliquam!</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quidem. Consequatur deserunt, autem laboriosam animi delectus tenetur. Quas omnis iste, quam recusandae, tempora ipsa incidunt dolorem ratione cumque nostrum aliquam!</p>
     
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui sapiente cupiditate voluptatem amet possimus provident nihil non hic consectetur, corrupti omnis ea. Incidunt aliquam labore possimus iste placeat cum!</p>
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui sapiente cupiditate voluptatem amet possimus provident nihil non hic consectetur, corrupti omnis ea. Incidunt aliquam labore possimus iste placeat cum!</p>
                 </article>
 
                 <article class="blob"></article>
@@ -80,40 +80,105 @@
 
                     <h2>Minhas Tecnologias</h2>
     
-                    <p>Essas são algumas das tecnologias que mais uso em meus projetos</p>
+                    <p class="secondary__text">Essas são algumas das tecnologias que mais uso em meus projetos</p>
                 </div>
 
 
-                <div class="tech__container">
+                <div class="tech__container" id="tech__container">
                     <article class="tech__card">
-                        <i class="devicon-typescript-plain"></i>
-                        <h3></h3>
+                        <div class="tech__card__content">
+                            
+                            <i class="devicon-typescript-plain"></i>
+                            
+                            <div class="tech__card__body">
+                                <h3 class="tech__card__title">Typescript</h3>
+    
+                            </div>
+                        </div>
+
+                        <div class="tech__card__border"></div>
+
+                    </article>
+
+                    <article class="tech__card">
+                        <div class="tech__card__content">
+                            
+                            <i class="devicon-react-plain"></i>
+                            
+                            <div class="tech__card__body">
+                                <h3 class="tech__card__title">React</h3>
+    
+                            </div>
+
+                        </div>
+
+                        <div class="tech__card__border"></div>
+
                     </article>
                     <article class="tech__card">
-                        <i></i>
-                        <h3></h3>
+                        <div class="tech__card__content">
+                            
+                            <i class=" devicon-css3-plain-wordmark"></i>
+                            
+                            <div class="tech__card__body">
+                                <h3 class="tech__card__title">CSS</h3>
+    
+                            </div>
+                        </div>
+
+                        <div class="tech__card__border"></div>
+
                     </article>
                     <article class="tech__card">
-                        <i></i>
-                        <h3></h3>
+                        <div class="tech__card__content">
+                            
+                            <i class="devicon-html5-plain-wordmark"></i>
+                            
+                            <div class="tech__card__body">
+                                <h3 class="tech__card__title">HTML</h3>
+    
+                            </div>
+                        </div>
+
+                        <div class="tech__card__border"></div>
+
                     </article>
                     <article class="tech__card">
-                        <i></i>
-                        <h3></h3>
+                        <div class="tech__card__content">
+                            
+                            <i class="devicon-python-plain"></i>
+                            
+                            <div class="tech__card__body">
+                                <h3 class="tech__card__title">Python</h3>
+    
+                            </div>
+                        </div>
+
+                        <div class="tech__card__border"></div>
+
                     </article>
                     <article class="tech__card">
-                        <i></i>
-                        <h3></h3>
-                    </article>
-                    <article class="tech__card">
-                        <i></i>
-                        <h3></h3>
+                        <div class="tech__card__content">
+                            
+                            <i class="devicon-sass-plain"></i>
+                            
+                            <div class="tech__card__body">
+                                <h3 class="tech__card__title">SASS</h3>
+    
+                            </div>
+                        </div>
+
+                        <div class="tech__card__border"></div>
+
                     </article>
                 </div>
+
+                <article class="blob"></article>
             </section>
 
             <section class="projects" id="prjects">
-                <h2>Some of my projects</h2>
+                
+                <h2 class="projects__heading">Some of my projects</h2>
 
                 <div class="projects__container">
                     <article class="card">
@@ -170,12 +235,38 @@
                     <article class="card">
 
                         <div class="card__header">
-                            <img class="card__img" src="src/assets/media/projects/chisai.png" alt="">
+                            <img class="card__img" src="src/assets/media/projects/chisai.png" alt="Chisai Game">
                         </div>
 
                         <div class="card__body">
                             <h3 class="card__title">Chisai</h3>
                             <p class="card__description">Um jogo RPG feito com PyGame. A história consiste nas aventuras de um jovem que fora recussitado em um mundo fantasioso após sua heróica morte.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card__header">
+                            <img class="card__img" src="src/assets/media/projects/nexter.png" alt="Nexter Projct">
+                        </div>
+
+                        <div class="card__body">
+                            <h3 class="card__title">Nexter</h3>
+                            <p class="card__description">Site criado para uma empresa do ramo imobiliário.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card__header">
+                            <img class="card__img" src="src/assets/media/projects/trillo.png" alt="Nexter Projct">
+                        </div>
+
+                        <div class="card__body">
+                            <h3 class="card__title">Trillo</h3>
+                            <p class="card__description">Um site criado para atrair amantes de viagens com um plano completo, desde de hotel a locomoção.</p>
                         </div>
 
                     </article>
@@ -187,16 +278,22 @@
 
                 <div class="tech__container">
                     <article class="tech__card">
-                        <i class="devicon-python-plain"></i>
-                    </article>
-
-                    <article class="tech__card">
-
-                        <i class="devicon-react-plain"></i>
-                    </article>
-                </div>
-
-            </section>
+                        <div class="tech__card__content">
+                            
+                            <i class="devicon-python-plain"></i>
+                        </article>
+    
+                        <article class="tech__card">
+                            <div class="tech__card__content">
+                                
+                        </div>
+                            
+                                                    <i class="devicon-react-plain"></i>
+                                                </article>
+                                            </div>
+                            
+                                        </section>
+                        </div>
 
         </main>
 
@@ -208,6 +305,8 @@
                 <li><a href=""></a></li>
             </ul>
         </footer>
+
+        <script src="src/assets/js/hoverEffect.js"></script>
     </div>
 </body>
 

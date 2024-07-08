@@ -104,8 +104,49 @@ ABOUT
 
 .about__body {
 
-    column-count: 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
     line-height: 1.6;
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    &::after, &::before {
+
+        content: "";
+        width: 32rem;
+        aspect-ratio: 1;
+        background-image: var(--radialSecondaryAccent);
+        top: 0;
+        left: 45%;
+        display: block;
+        z-index: -1;
+        position: absolute;
+        border-radius: var(--rounded-full);
+        filter: blur(4rem);
+        opacity: 25%;
+
+        animation: blob-morph 10s alternate linear infinite;
+    }
+
+    &::before {
+
+        background-image: var(--radialPrimarySecondary);
+        left: 55%;
+        top: 20%;
+        mix-blend-mode: multiply;
+    }
+}
+
+.about__text {
+
+    border: var(--primary-100) .2rem solid;
+    padding: var(--spacing-md);
+    border-radius: var(--rounded-medium);
+    background-color: var(--background-100);
 }
 
 /*
@@ -120,52 +161,34 @@ TECH
 }
 
 .tech__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0.8rem;
-    max-width: 91.6rem;
-    width: calc(100% - 2rem);
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.tech__card {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--spacing-xsm);
+
+    width: 100%;
+}
+
+/*
+Projects
+*/
+
+.projects__heading {
+
+    margin-block-end: var(--spacing-2xl);
+    line-height: 1;
+}
+
+.projects__container {
+
+    display: flex;
+    gap: var(--spacing-md);
     align-items: center;
-    padding: 6rem;
-    border: var(--primary-100) solid .1rem;
-    aspect-ratio: 1 / 1;
-    border-radius: 1.6rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
+    justify-content: start;
 
-    position: relative;
 
-    overflow: hidden;
+    & > * {
 
-    &::before {
-
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: var(--radialPrimarySecondary);
-        display: block;
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-        filter: blur(4rem)
+        align-self: stretch;
     }
-}
-
-.tech__card:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.tech__card > i {
-    flex: 0;
-    color: var(--secondary-500);
-    line-height: normal;
-    margin: 0;
 }
