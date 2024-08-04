@@ -11,11 +11,11 @@
     from {
 
         scale: initial;
-        
+
     }
 
     to {
- 
+
         scale: 110%;
     }
 }
@@ -30,4 +30,125 @@
 
         transform: translateX(-5%);
     }
+}
+
+/*
+FADE EFFECTS
+*/
+
+@keyframes fadein {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: initial;
+    }
+}
+
+@keyframes scale-up {
+    
+    from {
+
+        scale: 0%;
+    }
+
+    to {
+
+        scale: 100%;
+    }
+}
+
+.u-animated {
+
+    --ani-duration: .8s;
+    --ani-fill-mode: forwards;
+    --ani-direction: normal;
+    --ani-count: 1;
+    --ani-delay: 0s;
+    --ani-easing: ease;
+    --ani-name: unset;
+
+    /* Variants*/
+
+    --count-infinite: infinite;
+}
+
+.u-animated {
+
+    animation-name: var(--ani-name);
+    animation-duration: var(--ani-duration);
+    animation-fill-mode: var(--ani-fill-mode);
+    animation-direction: var(--ani-direction);
+    animation-iteration-count: var(--ani-count);
+    animation-delay: var(--ani-delay);
+    animation-timing-function: var(--ani-easing);
+
+    &.a-fadein {
+
+        --ani-name: fadein;
+        --ani-duration: 6s;
+
+    }
+
+    &.a-scale-up {
+
+        --ani-name: scale-up;
+        --ani-duration: 8s;
+    }
+
+    &.slide-up {
+
+        --ani-name: slide-up;
+    }
+}
+
+/*
+OBSERVER
+*/
+
+@keyframes stack {
+    
+    0% {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+
+        top: initial;
+        left: initial;
+    }
+}
+
+@keyframes slide-up {
+
+    0% {
+
+        transform: translateY(8rem);
+    }
+
+    100% {
+
+        transform: translateY(initial);
+    }
+}
+
+.u-animated[data-observe="true"] {
+
+    &.visible {
+
+        &.slide-up {
+
+            animation-name: slide-up;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+        }
+    }
+
 }

@@ -15,7 +15,7 @@
 
             <div class="logo">
                 <a href="#wrapper">
-                    <img class="logo__img" src="https://avatars.githubusercontent.com/u/75392842" alt="">
+                    <img class="logo__img" loading="lazy" src="https://avatars.githubusercontent.com/u/75392842" alt="Otávio Augusto Profile Picture">
                 </a>
             </div>
 
@@ -43,9 +43,9 @@
 
                 <div class="intro__presentation">
                     <div class="presentation__header">
-                        <h1>Otávio Barbiéri</h1>
+                        <h1 class="main-heading u-animated a-fadein">Otávio Barbiéri</h1>
     
-                        <p>Front End Developer</p>
+                        <p class="sub-heading u-animated a-fadein">Front End Developer</p>
 
                         
                     </div>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="intro__hero">
-                   <img class="intro__hero__img" src="src/assets/media/hero.jpg" alt="">
+                   <img class="intro__hero__img" src="src/assets/media/hero.jpg" alt="Hero image" loading="lazy">
                    <article class="blob"></article>
                 </div>
 
@@ -74,7 +74,7 @@
 
             </section>
 
-            <section class="techs" id="techs">
+            <section class="techs" id="techs" >
 
                 <div class="tech__header">
 
@@ -176,16 +176,24 @@
                 <article class="blob"></article>
             </section>
 
-            <section class="projects" id="prjects">
+            <section class="projects" id="prjects" >
                 
-                <h2 class="projects__heading">Some of my projects</h2>
+                <h2 class="projects__heading" data-observe="true">Some of my projects</h2>
 
                 <div class="projects__container">
-                    <article class="card">
+                    <article 
+                        class="card u-animated slide-up" onclick="deepcoffee__dialog.showModal()"
+                        data-observe="true"
+                        >
 
                         <div class="card__header">
 
-                            <img class="card__img" src="src/assets/media/projects/deepcoffe.png" alt="">
+                            <img
+                                class="card__img" 
+                                src="src/assets/media/projects/deepcoffe.png" 
+                                alt="Deepcoffe thumbnail"
+                                loading="lazy"
+                            >
                         </div>
 
 
@@ -194,12 +202,25 @@
                             <p class="card__description">Um analisador de doenças do cafeeiro por meio de Deep Learning. É o vencedor de uma corrida de startups do IF Sul de Minas - Campus Muzambinho.</p>
                         </div>
 
+                        <dialog id="deepcoffee__dialog" class="dialog">
+                            OI
+
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+                        </dialog>
+
                     </article>
 
-                    <article class="card">
+                    <article class="card u-animated slide-up" onclick="yonaka__dialog.showModal()" data-observe="true">
 
                         <div class="card__header">
-                            <img class="card__img" src="src/assets/media/projects/yonaka.png" alt="">
+                            <img 
+                            class="card__img" 
+                            src="src/assets/media/projects/yonaka.png" 
+                            alt="Yonaka Thumbnail"
+                            >
                         </div>
 
                         <div class="card__body">
@@ -207,11 +228,24 @@
                             <p class="card__description">Um framework CSS inspirado pelo TailiwndCSS e o PicoCSS. Usa a semântica e acessibilidade para estilizar elementos HTML, como também classes utilitárias para a criação de variantes.</p>
                         </div>
 
+                        <dialog id="yonaka__dialog" class="dialog">
+                            yonaka
+
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+                        </dialog>
+
                     </article>
-                    <article class="card">
+                    <article class="card u-animated slide-up" onclick="outdoors__dialog.showModal()" data-observe="true">
 
                         <div class="card__header">
-                            <img class="card__img" src="src/assets/media/projects/outdoors.png" alt="">
+                            <img 
+                            class="card__img" 
+                            src="src/assets/media/projects/outdoors.png" 
+                            alt="Outdoors thumbnail"
+                            >
                         </div>
 
                         <div class="card__body">
@@ -219,11 +253,24 @@
                             <p class="card__description">Um site para uma agência que oferece aventuras em meio a natureza para todos os gostos e idades.</p>
                         </div>
 
+                        <dialog id="outdoors__dialog" class="dialog">
+                            Outdoors
+
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+                        </dialog>
+
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="prisimple__dialog.showModal()">
 
                         <div class="card__header">
-                            <img class="card__img" src="src/assets/media/projects/prisimple.png" alt="">
+                            <img 
+                            class="card__img" 
+                            src="src/assets/media/projects/prisimple.png" 
+                            alt="Prisimple Thumbanail"
+                            >
                         </div>
 
                         <div class="card__body">
@@ -231,11 +278,40 @@
                             <p class="card__description">Uma aplicação que busca ajudar pequenos empreendedores na hora de calcular o preço de alguma mercadoria e/ou serviço com uma margem de lucro fixa.</p>
                         </div>
 
+                        <dialog id="prisimple__dialog" class="dialog">
+                            
+                            <header class="dialog__header">
+                                <h4>  
+                                    Prisimple
+                                </h4>
+                            </header>
+
+                            <div class="dialog__content">
+
+                                <p>
+                                    Prisimple é uma ferramenta que ajuda pequenos empreendedores na hora de calcular o preço de alguma mercadoria e/ou serviço com uma margem de lucro fixa. Ele é feito com Python e utiliza a biblioteca Tkinter para a interface gráfica.
+                                </p>
+                            </div>
+
+                            <footer class="dialog__footer">
+                                <form method="dialog">
+    
+                                    <button class="dialog__close" type="submit">&times;</button>
+                                </form>
+
+                            </footer>
+
+                        </dialog>
+
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="chisai__dialog.showModal()">
 
                         <div class="card__header">
-                            <img class="card__img" src="src/assets/media/projects/chisai.png" alt="Chisai Game">
+                            <img 
+                            class="card__img" 
+                            src="src/assets/media/projects/chisai.png" 
+                            alt="Chisai Game"
+                            >
                         </div>
 
                         <div class="card__body">
@@ -243,12 +319,25 @@
                             <p class="card__description">Um jogo RPG feito com PyGame. A história consiste nas aventuras de um jovem que fora recussitado em um mundo fantasioso após sua heróica morte.</p>
                         </div>
 
+                        <dialog id="chisai__dialog" class="dialog">
+                            OI
+
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+                        </dialog>
+
                     </article>
 
-                    <article class="card">
+                    <article class="card" onclick="nexter__dialog.showModal()">
 
                         <div class="card__header">
-                            <img class="card__img" src="src/assets/media/projects/nexter.png" alt="Nexter Projct">
+                            <img 
+                            class="card__img" 
+                            src="src/assets/media/projects/nexter.png" 
+                            alt="Nexter Projct"
+                            >
                         </div>
 
                         <div class="card__body">
@@ -256,9 +345,18 @@
                             <p class="card__description">Site criado para uma empresa do ramo imobiliário.</p>
                         </div>
 
+                        <dialog id="nexter__dialog" class="dialog">
+                            Nexter
+
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+                        </dialog>
+
                     </article>
 
-                    <article class="card">
+                    <article class="card" onclick="trillo__dialog.showModal()">
 
                         <div class="card__header">
                             <img class="card__img" src="src/assets/media/projects/trillo.png" alt="Nexter Projct">
@@ -268,6 +366,15 @@
                             <h3 class="card__title">Trillo</h3>
                             <p class="card__description">Um site criado para atrair amantes de viagens com um plano completo, desde de hotel a locomoção.</p>
                         </div>
+
+                        <dialog id="trillo__dialog" class="dialog">
+                            OI
+
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+                        </dialog>
 
                     </article>
                 </div>
@@ -307,6 +414,7 @@
         </footer>
 
         <script src="src/assets/js/hoverEffect.js"></script>
+        <script src="src/assets/js/observer.js" defer></script>
     </div>
 </body>
 

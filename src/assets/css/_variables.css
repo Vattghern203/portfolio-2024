@@ -1,5 +1,11 @@
 :root {
 
+    /*
+    Overlay
+    */
+
+    --overlay-background: rgba(0, 0, 0, .6);
+
     /*SPACING*/
 
     --spacing-small: .2rem;
