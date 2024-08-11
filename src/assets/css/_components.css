@@ -175,14 +175,16 @@ CARD
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
-
     cursor: pointer;
 
-    &:hover>.card__header>.card__img {
+    &:hover > .card__header > .card__img {
 
         scale: 1.4;
     }
+
+    &:has(dialog[open]) { cursor: default; }
 }
+
 
 .card__header {
 
@@ -311,7 +313,7 @@ DIALOG
     width: min(100%, 80dvw);
     height: min(80dvw, 100%);
     margin: 0 auto;
-    align-self: center;
+    align-self: safe center;
     border: none;
     border-radius: var(--rounded-medium);
     padding-inline: var(--spacing-2xl);
@@ -324,6 +326,13 @@ DIALOG
         background-color: var(--overlay-background);
         transition: backdrop-filter .8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     }
+}
+
+.dialog__header {}
+
+.dialog__title {
+
+    font-size: 4rem;
 }
 
 body:has(.dialog[open]) {
@@ -357,4 +366,73 @@ body:has(.dialog[open]) {
 
         opacity: .8;
     }
+}
+
+/*
+CHIPS
+*/
+
+:is(.chips, .chisps > *) {
+
+    --chip-background: var(--accent-400);
+
+    --css-color: #2A4ACE;
+    --html-color: #DD4A25;
+    --javascript-color: #E9D44C;
+    --next-color: #000000;
+    --python-color: #4584b6;
+    --react-color: #137688;
+    --sass-color: #C76295;
+    --typescript-color: #2F74C0;
+
+    border-radius: var(--rounded-peal);
+    width: min-content;
+    padding-block: .4rem;
+    padding-inline: var(--spacing-sm);
+
+    line-height: normal;
+    
+    background-color: var(--chip-background, var(--accent-400));
+
+    transition: opacity .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+    &:hover {
+
+        opacity: .8;
+    }
+
+    &.chips--css {
+        --chip-background: var(--css-color);
+    }
+    
+    &.chips--html {
+        --chip-background: var(--html-color);
+    }
+    
+    &.chips--javascript {
+        --chip-background: var(--javascript-color);
+    }
+    
+    &.chips--next {
+        --chip-background: var(--next-color);
+    }
+    
+    &.chips--python {
+        --chip-background: var(--python-color);
+    }
+    
+    &.chips--react {
+        
+        --chip-background: var(--react-color);
+    }
+    
+    &.chips--sass {
+        --chip-background: var(--sass-color);
+    }
+
+    &.chips--typescript {
+
+        --chip-background: var(--typescript-color);
+    }
+
 }

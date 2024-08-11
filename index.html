@@ -80,7 +80,7 @@
 
                     <h2>Minhas Tecnologias</h2>
     
-                    <p class="secondary__text">Essas são algumas das tecnologias que mais uso em meus projetos</p>
+                    <p class="secondary__text">Essas são algumas das tecnologias que mais uso e domino em meus projetos</p>
                 </div>
 
 
@@ -203,7 +203,30 @@
                         </div>
 
                         <dialog id="deepcoffee__dialog" class="dialog">
-                            OI
+                            <header class="dialog__header">
+                                <h4 class="dialog__title">DeepCoffe</h4>
+
+                                <small class="dialog__small">
+                                    Classificador de doenças do cafeeiro por meio de Deep Learning
+                                </small>
+                            </header>
+
+                            <div class="dialog__content">
+                                <img 
+                                    src="src/assets/media/projects/deepcoffe.png" alt=""
+                                    loading="lazy"
+                                >
+
+                                <p class="dialog__description">
+                                     DeepCoffe é um analisador de doenças do cafeeiro por meio de Deep Learning. É o vencedor de uma corrida de startups do IF Sul de Minas - Campus Muzambinho. O resultado do trabalho é um modelo de aprendizado profundo que pode ser utilizado para prever a possibilidade de uma doença em uma amostra da folha do café.
+                                </p>
+                            </div>
+
+                            <footer class="dialog__footer">
+                                <span class="chips chips--react">React</span>
+
+                                <span class="chips chips--css">Typescript</span>
+                            </footer>
 
                             <form method="dialog">
 
@@ -263,7 +286,7 @@
                         </dialog>
 
                     </article>
-                    <article class="card" onclick="prisimple__dialog.showModal()">
+                    <article class="card u-animated slide-up" onclick="prisimple__dialog.showModal()" data-observe="true">
 
                         <div class="card__header">
                             <img 
@@ -278,33 +301,35 @@
                             <p class="card__description">Uma aplicação que busca ajudar pequenos empreendedores na hora de calcular o preço de alguma mercadoria e/ou serviço com uma margem de lucro fixa.</p>
                         </div>
 
-                        <dialog id="prisimple__dialog" class="dialog">
-                            
-                            <header class="dialog__header">
-                                <h4>  
-                                    Prisimple
-                                </h4>
-                            </header>
-
-                            <div class="dialog__content">
-
-                                <p>
-                                    Prisimple é uma ferramenta que ajuda pequenos empreendedores na hora de calcular o preço de alguma mercadoria e/ou serviço com uma margem de lucro fixa. Ele é feito com Python e utiliza a biblioteca Tkinter para a interface gráfica.
-                                </p>
-                            </div>
-
-                            <footer class="dialog__footer">
-                                <form method="dialog">
-    
-                                    <button class="dialog__close" type="submit">&times;</button>
-                                </form>
-
-                            </footer>
-
-                        </dialog>
-
+                        
                     </article>
-                    <article class="card" onclick="chisai__dialog.showModal()">
+
+                    <dialog id="prisimple__dialog" class="dialog">
+                        
+                        <header class="dialog__header">
+                            <h4>  
+                                Prisimple
+                            </h4>
+                        </header>
+
+                        <div class="dialog__content">
+
+                            <p>
+                                Prisimple é uma ferramenta que ajuda pequenos empreendedores na hora de calcular o preço de alguma mercadoria e/ou serviço com uma margem de lucro fixa. Ele é feito com Python e utiliza a biblioteca Tkinter para a interface gráfica.
+                            </p>
+                        </div>
+
+                        <footer class="dialog__footer">
+                            <form method="dialog">
+
+                                <button class="dialog__close" type="submit">&times;</button>
+                            </form>
+
+                        </footer>
+
+                    </dialog>
+
+                    <article class="card u-animated slide-up" onclick="chisai__dialog.showModal()" data-observe="true">
 
                         <div class="card__header">
                             <img 
@@ -319,18 +344,19 @@
                             <p class="card__description">Um jogo RPG feito com PyGame. A história consiste nas aventuras de um jovem que fora recussitado em um mundo fantasioso após sua heróica morte.</p>
                         </div>
 
-                        <dialog id="chisai__dialog" class="dialog">
-                            OI
-
-                            <form method="dialog">
-
-                                <button class="dialog__close" type="submit">&times;</button>
-                            </form>
-                        </dialog>
-
+                        
                     </article>
 
-                    <article class="card" onclick="nexter__dialog.showModal()">
+                    <dialog id="chisai__dialog" class="dialog">
+                        OI
+
+                        <form method="dialog">
+
+                            <button class="dialog__close" type="submit">&times;</button>
+                        </form>
+                    </dialog>
+
+                    <article class="card u-animated slide-up" onclick="nexter__dialog.showModal()" data-observe="true">
 
                         <div class="card__header">
                             <img 
@@ -345,16 +371,17 @@
                             <p class="card__description">Site criado para uma empresa do ramo imobiliário.</p>
                         </div>
 
-                        <dialog id="nexter__dialog" class="dialog">
-                            Nexter
-
-                            <form method="dialog">
-
-                                <button class="dialog__close" type="submit">&times;</button>
-                            </form>
-                        </dialog>
-
+                        
                     </article>
+
+                    <dialog id="nexter__dialog" class="dialog">
+                        Nexter
+
+                        <form method="dialog">
+
+                            <button class="dialog__close" type="submit">&times;</button>
+                        </form>
+                    </dialog>
 
                     <article class="card" onclick="trillo__dialog.showModal()">
 
@@ -367,16 +394,17 @@
                             <p class="card__description">Um site criado para atrair amantes de viagens com um plano completo, desde de hotel a locomoção.</p>
                         </div>
 
-                        <dialog id="trillo__dialog" class="dialog">
-                            OI
-
-                            <form method="dialog">
-
-                                <button class="dialog__close" type="submit">&times;</button>
-                            </form>
-                        </dialog>
-
+                        
                     </article>
+
+                    <dialog id="trillo__dialog" class="dialog">
+                        OI
+
+                        <form method="dialog">
+
+                            <button class="dialog__close" type="submit">&times;</button>
+                        </form>
+                    </dialog>
                 </div>
             </section>
 
